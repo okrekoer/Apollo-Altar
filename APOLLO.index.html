@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Altar to Apollo</title>
+    <style>
+       
+        body {
+            background: radial-gradient(circle, #2c1a04 0%, #0d0903 100%);
+            color: #fcf8f2;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        
+        .altar-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 2px solid #dfb76c;
+            border-radius: 15px;
+            background: rgba(20, 15, 10, 0.8);
+            box-shadow: 0 0 30px rgba(223, 183, 108, 0.3);
+        }
+
+        
+        h1 {
+            color: #dfb76c;
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px rgba(223, 183, 108, 0.6);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #bfa370;
+            margin-bottom: 40px;
+        }
+
+       
+        .offering-btn {
+            background: linear-gradient(135deg, #dfb76c 0%, #b38f43 100%);
+            color: #1a1105;
+            border: none;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(223, 183, 108, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .offering-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(223, 183, 108, 0.7);
+        }
+
+
+        .altar-section {
+            margin-top: 40px;
+            text-align: left;
+            border-top: 1px solid rgba(223, 183, 108, 0.3);
+            padding-top: 20px;
+        }
+
+        h2 {
+            color: #dfb76c;
+            font-size: 1.5rem;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #e6dfd5;
+        }
+
+        /* Audio Player Styling for Music/Hymns */
+        audio {
+            margin-top: 15px;
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="altar-container">
+        <h1>Phoebus Apollo</h1>
+        <div class="subtitle">God of Light, Music, Truth, and Healing, and of Plague and Disease. </div>
+
+        <!-- Central Focal Point / Devotional Action -->
+        <div style="margin: 40px 0;">
+            <p>Welcome to this sacred space. Take a minute to breathe in your God's light.</p>
+            <button class="offering-btn" onclick="pourOffering()">Send Apollon an Offering</button>
+        </div>
+
+        <!-- Section 1: Prayer or Hymn -->
+        <div class="altar-section">
+            <h2>Hymn to the Sun</h2>
+            <p>☀️ <em>"God to the golden bow,
+And of the golden lyre,
+And of the golden hair,
+And of the golden fire, 
+Charioteer, Of the patient year,
+Where---where slept thine ire, 
+When a blank idiot I put on thy wreath, 
+Thy laurel, thy glory, 
+The light of thy story, 
+Or was I a worm---too low crawling for death? 
+O Delphic Apollo! - John Keats."</em></p>
+        </div>
+
+
+    <!-- offering button -->
+    <script>
+        function pourOffering() {
+            alert("☀️ Hail you, loFrd Apollon. You who sings sweet songs for all to hear. You, who plays charming melodies with your lyre. You, who strikes from afar with the arrows of sunlight, hear my prayers. May you accept my offerings in exchange for my unwavering loyalty.");
+        }
+    </script>
+
+</body>
+</html>
+
+<img src="https://i.pinimg.com/736x/22/52/05/22520545874cefb36451cdb5914614c7.jpg" alt="a statue of Phoebus Apollon" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 30px; display: block; margin-left: auto; margin-right: auto; box-shadow: 0 0 25px rgba(223, 183, 108, 0.6);">
+
+<div class="upload-section" style="margin-top: 30px; border-top: 1px solid rgba(223, 183, 108, 0.3); padding-top: 20px;">
+    <h2>Leave a Visual Offering</h2>
+    <p>Upload an image or artwork to place onto the altar.</p>
+    
+    <!-- Hidden real input, styled button for a cleaner look -->
+    <input type="file" id="imageLoader" accept="image/*" style="display: none;" onchange="handleImage(event)">
+    <button class="offering-btn" onclick="document.getElementById('imageLoader').click()">Choose Image</button>
+    
+    <!-- Container where the uploaded image will appear -->
+    <div id="uploadedImageContainer" style="margin-top: 20px;"></div>
+</div>
+
+<!-- This wrapper turns into a flexible grid box -->
+<div id="uploadedImageContainer" style="
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    justify-content: center; 
+    margin-top: 20px;
+"></div>
+----
+
